@@ -13,7 +13,13 @@
         </header>
         <nav></nav>
         <main></main>
-        <footer></footer>
-        <script src=""></script>
+        <footer>
+            &copy;2021 | Niky Graffagnino | All Rights Reserved |Today's Date: <span id="currentdate"></span>
+        </footer>
+        <script>
+            const options = {weekday: 'long', day:'numeric', month: 'long', year:'numeric'};
+            document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-us', options);
+
+        </script>
     </body>
 </html>
